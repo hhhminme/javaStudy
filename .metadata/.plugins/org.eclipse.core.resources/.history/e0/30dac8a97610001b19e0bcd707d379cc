@@ -1,0 +1,5 @@
+public class StringEqualsEx{
+	public static void main(String[] args) {
+		System.out.println("ÀÚ¹Ù"+3.14+false+'a');
+	}
+}

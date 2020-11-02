@@ -1,0 +1,15 @@
+import java.util.*;
+
+public class PracticeClass {
+	public static static void main(String[] args) {
+		HashMap<String, Integer> h = new HashMap<String, Integer>();
+		h.put("a", 10);
+		h.put("b", 10);
+		System.out.println(func(h)); // 해시맵 h에 들어 있는 원소 개수 출력
+	}
+
+	private static int func(HashMap<String, Integer> h) {
+		// TODO Auto-generated method stub
+		return h.size();
+	}
+}

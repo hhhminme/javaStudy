@@ -1,0 +1,23 @@
+import java.util.*;
+public class ex7_6 {
+	public static void main(String[] args) {
+		//해쉬맵을 이용하여 학생의 이름과 자바 점수를 기록 관리하는 프로그램을 생성하여라. 
+		Scanner scanner = new Scanner(System.in);
+		HashMap<String, String> stu = new HashMap<>();
+		System.out.println("학생의 이름을 입력하세요");
+		stu.put("홍길동","88");
+		stu.put("벡님준","99");
+		stu.put("허민","77");
+		
+		System.out.println("HashMap의 요소 개수 : " + stu.size());
+		
+		Set<String> keys = stu.keySet(); 
+		
+		Iterator <String> it = keys.iterator();
+		while(it.hasNext()) {
+			String name = it.next(); 
+			String score = stu.get(name);
+			System.out.println(name + " : " + score);
+		}
+	}
+}

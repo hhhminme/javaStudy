@@ -1,0 +1,9 @@
+import java.util.*;
+public class PracticeClass {
+	public static void main(String[] args) {
+		ArrayList<String> a = new ArrayList<>();
+		a.add("java");
+		a.add(0,"C++");
+		a.remove(a.size()-1);
+	}
+}

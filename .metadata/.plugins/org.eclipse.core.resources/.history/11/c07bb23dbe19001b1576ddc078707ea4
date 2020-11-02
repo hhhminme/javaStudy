@@ -1,0 +1,20 @@
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.Set;
+
+public class 실습_2 {
+		public static void main(String[] args) {
+		Set lotto= new HashSet();
+		int lotto_num;
+		while (lotto.size() != 6) {
+			lotto_num = (int)(Math.random()*45 + 1);
+			lotto.add(lotto_num);
+		}
+		ArrayList<Integer> lotto_array = new ArrayList<Integer>(lotto);
+		Collections.sort(lotto_array);
+		System.out.println("로또번호 : ");
+		for (Object list:lotto) System.out.println(list + " ");
+		
+	}
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="&#x0D;&#x0A;public class 실습_2 {&#x0D;&#x0A;&#x09;import java.util.ArrayList;&#x0D;&#x0A;&#x0D;&#x0A;&#x09;import java.util.Collections;&#x0D;&#x0A;&#x0D;&#x0A;&#x09;import java.util.HashSet;&#x0D;&#x0A;&#x0D;&#x0A;&#x09;import java.util.Set;&#x0D;&#x0A;&#x09;public class HashSetLotto {&#x0D;&#x0A;&#x0D;&#x0A;&#x09;&#x09;public static void main(String[] args) {&#x0D;&#x0A;&#x0D;&#x0A;&#x09;&#x09;​&#x0D;&#x0A;&#x0D;&#x0A;&#x09;&#x09;​&#x0D;&#x0A;&#x0D;&#x0A;&#x09;&#x09;//로또번호 랜덤으로 6개 받는 set 생성&#x0D;&#x0A;&#x0D;&#x0A;&#x09;&#x09;Set lottoSet= new HashSet();&#x0D;&#x0A;&#x0D;&#x0A;&#x09;&#x09;​&#x0D;&#x0A;&#x0D;&#x0A;&#x09;&#x09;// 1 ~ 45번까지의 번호를 랜덤으로 받는 번호 저장 변수&#x0D;&#x0A;&#x0D;&#x0A;&#x09;&#x09;int rNum;&#x0D;&#x0A;&#x0D;&#x0A;&#x09;&#x09;​&#x0D;&#x0A;&#x0D;&#x0A;&#x09;&#x09;// set은 중복이 없으므로 같은 수가 들어갈 수 없다.&#x0D;&#x0A;&#x0D;&#x0A;&#x09;&#x09;// lottoSet의 크기가 6일 때 까지 lottoSet에 랜덤 수를 저장&#x0D;&#x0A;&#x0D;&#x0A;&#x09;&#x09;while (lottoSet.size() != 6) {&#x0D;&#x0A;&#x0D;&#x0A;&#x09;&#x09;//랜덤 수 1~45&#x0D;&#x0A;&#x0D;&#x0A;&#x09;&#x09;rNum = (int)(Math.random()*45 + 1);&#x0D;&#x0A;&#x0D;&#x0A;&#x09;&#x09;//lottoSet에 랜덤 수 저장&#x0D;&#x0A;&#x0D;&#x0A;&#x09;&#x09;lottoSet.add(rNum);&#x0D;&#x0A;&#x0D;&#x0A;&#x09;&#x09;}&#x0D;&#x0A;&#x0D;&#x0A;&#x09;&#x09;​&#x0D;&#x0A;&#x0D;&#x0A;&#x09;&#x09;​&#x0D;&#x0A;&#x0D;&#x0A;&#x09;&#x09;​&#x0D;&#x0A;&#x0D;&#x0A;&#x09;&#x09;//가지고 있는 표준화 하여 수를 모두 반환 하기 위해 iterator 생성 &#x0D;&#x0A;&#x0D;&#x0A;&#x09;&#x09;​&#x0D;&#x0A;&#x0D;&#x0A;&#x09;&#x09;ArrayList&lt;Integer&gt; lottoArr = new ArrayList&lt;Integer&gt;(lottoSet);&#x0D;&#x0A;&#x0D;&#x0A;&#x09;&#x09;// ArrayList 오름차순 정렬&#x0D;&#x0A;&#x0D;&#x0A;&#x09;&#x09;Collections.sort(lottoArr);&#x0D;&#x0A;&#x0D;&#x0A;&#x09;&#x09;// 금주의 로또번호 : 번호 형식으로 출력&#x0D;&#x0A;&#x09;&#x09;System.out.println(&quot;로또번호 : &quot;);&#x0D;&#x0A;&#x09;&#x09;for (Objectlist:lottoArr) System.out.println(list + &quot; &quot;);&#x0D;&#x0A;}&#x0D;&#x0A;&#x09;&#x09;&#x0D;&#x0A;&#x09;}&#x0D;&#x0A;"/>
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<list key="findhistory">
+			<item value="&#x0D;&#x0A;public class 실습_2 {&#x0D;&#x0A;&#x09;import java.util.ArrayList;&#x0D;&#x0A;&#x0D;&#x0A;&#x09;import java.util.Collections;&#x0D;&#x0A;&#x0D;&#x0A;&#x09;import java.util.HashSet;&#x0D;&#x0A;&#x0D;&#x0A;&#x09;import java.util.Set;&#x0D;&#x0A;&#x09;public class HashSetLotto {&#x0D;&#x0A;&#x0D;&#x0A;&#x09;&#x09;public static void main(String[] args) {&#x0D;&#x0A;&#x0D;&#x0A;&#x09;&#x09;​&#x0D;&#x0A;&#x0D;&#x0A;&#x09;&#x09;​&#x0D;&#x0A;&#x0D;&#x0A;&#x09;&#x09;//로또번호 랜덤으로 6개 받는 set 생성&#x0D;&#x0A;&#x0D;&#x0A;&#x09;&#x09;Set lottoSet= new HashSet();&#x0D;&#x0A;&#x0D;&#x0A;&#x09;&#x09;​&#x0D;&#x0A;&#x0D;&#x0A;&#x09;&#x09;// 1 ~ 45번까지의 번호를 랜덤으로 받는 번호 저장 변수&#x0D;&#x0A;&#x0D;&#x0A;&#x09;&#x09;int rNum;&#x0D;&#x0A;&#x0D;&#x0A;&#x09;&#x09;​&#x0D;&#x0A;&#x0D;&#x0A;&#x09;&#x09;// set은 중복이 없으므로 같은 수가 들어갈 수 없다.&#x0D;&#x0A;&#x0D;&#x0A;&#x09;&#x09;// lottoSet의 크기가 6일 때 까지 lottoSet에 랜덤 수를 저장&#x0D;&#x0A;&#x0D;&#x0A;&#x09;&#x09;while (lottoSet.size() != 6) {&#x0D;&#x0A;&#x0D;&#x0A;&#x09;&#x09;//랜덤 수 1~45&#x0D;&#x0A;&#x0D;&#x0A;&#x09;&#x09;rNum = (int)(Math.random()*45 + 1);&#x0D;&#x0A;&#x0D;&#x0A;&#x09;&#x09;//lottoSet에 랜덤 수 저장&#x0D;&#x0A;&#x0D;&#x0A;&#x09;&#x09;lottoSet.add(rNum);&#x0D;&#x0A;&#x0D;&#x0A;&#x09;&#x09;}&#x0D;&#x0A;&#x0D;&#x0A;&#x09;&#x09;​&#x0D;&#x0A;&#x0D;&#x0A;&#x09;&#x09;​&#x0D;&#x0A;&#x0D;&#x0A;&#x09;&#x09;​&#x0D;&#x0A;&#x0D;&#x0A;&#x09;&#x09;//가지고 있는 표준화 하여 수를 모두 반환 하기 위해 iterator 생성 &#x0D;&#x0A;&#x0D;&#x0A;&#x09;&#x09;​&#x0D;&#x0A;&#x0D;&#x0A;&#x09;&#x09;ArrayList&lt;Integer&gt; lottoArr = new ArrayList&lt;Integer&gt;(lottoSet);&#x0D;&#x0A;&#x0D;&#x0A;&#x09;&#x09;// ArrayList 오름차순 정렬&#x0D;&#x0A;&#x0D;&#x0A;&#x09;&#x09;Collections.sort(lottoArr);&#x0D;&#x0A;&#x0D;&#x0A;&#x09;&#x09;// 금주의 로또번호 : 번호 형식으로 출력&#x0D;&#x0A;&#x09;&#x09;System.out.println(&quot;로또번호 : &quot;);&#x0D;&#x0A;&#x09;&#x09;for (Objectlist:lottoArr) System.out.println(list + &quot; &quot;);&#x0D;&#x0A;}&#x0D;&#x0A;&#x09;&#x09;&#x0D;&#x0A;&#x09;}&#x0D;&#x0A;"/>
+			<item value="package ch_5;"/>
+			<item value="&#x0D;&#x0A;public class ex2_1 {&#x0D;&#x0A;&#x09;public static int sum(int n, int m) {&#x0D;&#x0A;&#x09;&#x09;return n + m;&#x0D;&#x0A;&#x09;}&#x0D;&#x0A;&#x09;public static void main(String[] args) {&#x0D;&#x0A;&#x09;&#x09;int i = 20; &#x0D;&#x0A;&#x09;&#x09;int s; &#x0D;&#x0A;&#x09;&#x09;char a; &#x0D;&#x0A;&#x09;&#x09;&#x0D;&#x0A;&#x09;&#x09;s = sum(i,10);&#x0D;&#x0A;&#x09;&#x09;&#x09;a = &apos;?&apos;;&#x0D;&#x0A;&#x09;&#x09;System.out.println(a);&#x0D;&#x0A;&#x09;&#x09;System.out.println(&quot;hello&quot;);&#x0D;&#x0A;&#x09;&#x09;System.out.println(s);&#x0D;&#x0A;&#x09;}&#x0D;&#x0A;}&#x0D;&#x0A;"/>
+			<item value=""/>
+		</list>
+		<list key="replacehistory">
+		</list>
+	</section>
+	<section name="org.eclipse.wst.xml.ui.internal.preferences.XMLTemplatePreferencePage$XMLEditTemplateDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="6"/>
+		<item key="DIALOG_Y_ORIGIN" value="173"/>
+		<item key="DIALOG_WIDTH" value="825"/>
+		<item key="DIALOG_HEIGHT" value="506"/>
+		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="779"/>
+		<item key="DIALOG_Y_ORIGIN" value="173"/>
+		<item key="DIALOG_WIDTH" value="385"/>
+		<item key="DIALOG_HEIGHT" value="523"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+</section>

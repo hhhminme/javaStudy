@@ -1,0 +1,6 @@
+public class StringEqualsEx{
+	public static void main(String[] args) {
+		String s = Integer.toBinaryString(1024);
+		System.out.println(s);
+	}
+}

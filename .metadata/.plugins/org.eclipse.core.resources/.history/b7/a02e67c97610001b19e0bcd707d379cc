@@ -1,0 +1,8 @@
+public class StringEqualsEx{
+	public static void main(String[] args) {
+		StringBuffer sb =  new StringBuffer("My name");
+		sb.append(" is Tom");
+		sb.append(".");
+		System.out.println(sb);
+	}
+}

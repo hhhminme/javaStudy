@@ -1,0 +1,7 @@
+public class StringEqualsEx{
+	public static void main(String[] args) {
+		StringBuffer sb =  new StringBuffer("I am your man.");
+		sb.insert(4, " not");
+		System.out.println(sb);
+	}
+}
