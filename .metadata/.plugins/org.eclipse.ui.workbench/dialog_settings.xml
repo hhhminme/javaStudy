@@ -22,4 +22,11 @@
 			<item value="preferences"/>
 		</list>
 	</section>
+	<section name="ImportExportAction">
+		<item key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID" value="org.eclipse.jst.ejb.ui.internal.wizard.EJBComponentImportWizard"/>
+		<list key="ImportExportPage.STORE_EXPANDED_IMPORT_CATEGORIES">
+			<item value="org.eclipse.jst.ejb.ui"/>
+			<item value="org.eclipse.jst.j2ee.internal"/>
+		</list>
+	</section>
 </section>
