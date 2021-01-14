@@ -1,11 +1,17 @@
 package kr.or.connect.jdbcexam;
+import java.util.List;
 import kr.or.connect.jdbcexam.dao.RoleDao;
 import kr.or.connect.jdbcexam.dto.Role;
-import java.sql.*;
-public class JDBCExam1 { //1개 값 가져오는 
+
+public class JDBCExam3 { //select all
 	public static void main(String[] args) {
+		
 		RoleDao dao = new RoleDao();
-		Role role = dao.getRole(100);
-		System.out.println(role);
+		
+		List<Role> list = dao.getRoles();
+		
+		for(Role role:list) {
+			System.out.println(role);
+		}
 	}
 }
