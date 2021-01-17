@@ -1,33 +1,29 @@
 package algorithm;
 import java.util.*;
 public class exam1 {
-	   public static int solution(int[][] board, int[] moves) {
-	        int answer = 0; 
-	        Stack<Integer> m = new Stack<Integer>();
-	        for(int i = moves.length-1; i>=0; i--){
-	            int mNum = moves[i] - 1;
-	            for(int j = 4; j>=0; j--){
-	                if(!(board[j][mNum] == 0)){
-	                    int temp = board[j][mNum];
-	                    if(m.empty()){
-	                        m.push(temp);
-	                    }
-	                    else {
-	                    	if(m.peek().equals(temp)) {
-		                        answer++;
-		                        m.pop();
-		                    }
-	                    }
-	                }   
-	            }        
+	    public static int[] solution(int[] array, int[][] commands) {
+	        int[] answer = new int[3];
+	        ArrayList <Integer> list = new ArrayList<>();
+	        int i,j,k;
+	        for(int index = 0; index < 3; index++){
+	            i = commands[index][0] - 1;
+	            j = commands[index][1] - 1;
+	            k = commands[index][2] - 1;
+	            for(int q = i; q<j;q++){
+	                list.add(array[q]);
+	            }
+	            Collections.sort(list);
+	            answer[index] = list.get(k);
+	            list.clear();
 	        }
+	        
 	        return answer;
 	    }
 	   public static void main(String[] args) {
-		   int[][] board = {{0,0,0,0,0},{0,0,1,0,3},{0,2,5,0,1},{4,2,4,4,2},{3,5,1,3,1}};
-		   int[] moves = {1,5,3,5,1,2,1,4};
+		   int[] array = {1, 5, 2, 6, 3, 7, 4};
+		   int[][] commands = {{2, 5, 3}, {4, 4, 1}, {1, 7, 3}};
 		   
-		   int result = solution(board,moves);
-		   System.out.println(result);
+		   System.out.println(solution(array,commands));
+		   }
 	   }
-}
+
